@@ -1,0 +1,26 @@
+﻿/* start*/
+
+.container a:link
+{
+	color:gray;
+	text-decoration: none;
+}
+.container a:visited 
+{
+	color:gray;
+	text-decoration: none;
+}
+.container a:hover
+{
+	color:red;
+	text-decoration: none;
+}
+.container a:active 
+{
+	color:gray;
+	text-decoration: none;
+}
+
+
+/* @end */
+

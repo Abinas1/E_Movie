@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  
+   <servlet>
+  <servlet-name>InitServlet</servlet-name>
+  <servlet-class>com.kws.mtrs.core.util.InitServlet</servlet-class>
+  <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/config/system.properties</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+   <servlet>
+    <servlet-name>ExportXLS</servlet-name>
+    <servlet-class>com.kws.mtrs.core.export.ExportXLS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.kws.mtrs.action.RegisterAction</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.kws.mtrs.action.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <servlet-class>com.kws.mtrs.action.ChangePasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MoviesAction</servlet-name>
+    <servlet-class>com.kws.mtrs.action.MoviesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TheatreAction</servlet-name>
+    <servlet-class>com.kws.mtrs.action.TheatreAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MovieTheatresAction</servlet-name>
+    <servlet-class>com.kws.mtrs.action.MovieTheatresAction</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>EmailAction</servlet-name>
+    <servlet-class>com.kws.mtrs.action.EmailAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsAction</servlet-name>
+    <servlet-class>com.kws.mtrs.action.NewsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EventsAction</servlet-name>
+    <servlet-class>com.kws.mtrs.action.EventsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BookingTicketAction</servlet-name>
+    <servlet-class>com.kws.mtrs.action.BookingTicketAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ForgotPasswordAction</servlet-name>
+    <servlet-class>com.kws.mtrs.action.ForgotPasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AssignMovieToTheatre</servlet-name>
+    <servlet-class>com.kws.mtrs.action.AssignMovieToTheatre</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/InitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExportXLS</servlet-name>
+    <url-pattern>/ExportXLS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterAction</servlet-name>
+    <url-pattern>/RegisterAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <url-pattern>/ChangePasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MoviesAction</servlet-name>
+    <url-pattern>/MoviesAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TheatreAction</servlet-name>
+    <url-pattern>/TheatreAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MovieTheatresAction</servlet-name>
+    <url-pattern>/MovieTheatresAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmailAction</servlet-name>
+    <url-pattern>/EmailAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsAction</servlet-name>
+    <url-pattern>/NewsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EventsAction</servlet-name>
+    <url-pattern>/EventsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookingTicketAction</servlet-name>
+    <url-pattern>/BookingTicketAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ForgotPasswordAction</servlet-name>
+    <url-pattern>/ForgotPasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AssignMovieToTheatre</servlet-name>
+    <url-pattern>/AssignMovieToTheatre</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
